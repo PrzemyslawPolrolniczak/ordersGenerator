@@ -1,5 +1,7 @@
 # Orders creation helper
 
+https://user-images.githubusercontent.com/24530850/153000755-c91936f2-c24b-4552-9bd6-7b726093ad22.mov
+
 ## Usage:
 
 1. Clone repo to your machine and `cd` to it
