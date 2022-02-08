@@ -13,4 +13,6 @@ https://user-images.githubusercontent.com/24530850/153000755-c91936f2-c24b-4552-
 
 You can create multiple orders by passing number as an argument.
 <br>
-`node index.js 10` - this will create 10 orders
+`node index.js 10` - this will create 10 orders<br>
+
+If no argument is present, only one order will be created
