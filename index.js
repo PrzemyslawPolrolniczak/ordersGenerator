@@ -58,7 +58,7 @@ const generateOrder = async () => {
   const cartHash = addToCartResponse.data.cart_hash
 
   const orderResponse = await axios.request({
-    url: 'https://ppolrolniczak-dev-wordpress.testing.lulu.com/?wc-ajax=checkout',
+    url: `${process.env.SHOP_URL}/?wc-ajax=checkout`,
     method: 'POST',
     headers: {
       cookie: `${process.env.COOKIE}; woocommerce_items_in_cart=1; woocommerce_cart_hash=${cartHash}`,
