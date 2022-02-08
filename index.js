@@ -41,7 +41,6 @@ secondForm.append('shipping_email', 'wp-test@lulu.com');
 secondForm.append('order_comments', '');
 secondForm.append('shipping_method[0]', 'flat_rate:2');
 secondForm.append('payment_method', 'cod');
-secondForm.append('_wp_http_referer', '/?wc-ajax=update_order_review');
 secondForm.append('woocommerce-process-checkout-nonce', process.env.WOO_COMMERCE_PROCESS_CHECKOUT_NONCE);
 
 const generateOrder = async () => {
