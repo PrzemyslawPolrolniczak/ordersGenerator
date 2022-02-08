@@ -1,3 +1,11 @@
+const args = process.argv.slice(2);
+const repeatTimes = args.length ? parseInt(args[0]) : 1;
+
+if (isNaN(repeatTimes)) {
+  console.log('Invalid argument. Program is expecting number')
+  return;
+}
+
 const axios = require('axios');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -67,7 +75,7 @@ const generateOrder = async () => {
 }
 
 const main = async () => {
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < repeatTimes; i++) {
     await generateOrder();
   }
 }
